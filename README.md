@@ -1,6 +1,7 @@
 # metarCode
 
-An express application that returns latest weather info given a specific station code.
+An express application that returns latest weather info given a specific station code. 
+Caching is implemented using Redis.
 
 # Setup
 

@@ -13,10 +13,8 @@ exports.getStationData = async function(req, res) {
     let observationDateTime = formatDate[0] + ' at ' + formatDate[1];
 
     let otherInfo= resArr[1].split(" ");
-    console.log({otherInfo})
     let finalTemp="";
     let temp= otherInfo.find(value => /\//gi.test(value) ).split('/');
-    console.log('temp in calc', temp)
     finalTemp =  getTemp(temp[0].split(" "));
 
     let finalWind = "";

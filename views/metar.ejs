@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Metar</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
     <h1> Weather for given Metar Code is: </h1>
-    <p>Welcome to <%= title %></p>
-    <p>Weather information</p>
+    <%- JSON.stringify(data) %>
   </body>
 </html>

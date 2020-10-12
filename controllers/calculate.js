@@ -30,5 +30,6 @@ exports.getStationData = async function(req, res) {
     }
     client.setex(scode, 300, JSON.stringify(stationData));
 
-    res.send({stationData}) 
+    // res.send({stationData}) 
+    res.render('metar', {data: stationData})
 }

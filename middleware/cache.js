@@ -18,7 +18,8 @@ function cache(req, res, next) {
         if (err) throw err;
         
         if (data) {
-          res.send({ data: JSON.parse(data)});
+        //   res.send({ data: JSON.parse(data)});
+        res.render('metar', { data: JSON.parse(data)} )
         } else {
           next();
         }

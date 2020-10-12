@@ -1,7 +1,9 @@
 
     function getTemp(temperature) {
+        console.log({temperature})
         let temp = temperature[temperature.length - 1];
-        let tempCelcius =  temp.replace(/'M'/, '-');
+        console.log({temp})
+        let tempCelcius =  temp.replace('M', '-');
         let tempFahrenheit = Math.ceil((tempCelcius * 9/5) + 32);  
         let finalTemp = tempCelcius + " C ("  + tempFahrenheit + " F)";
         return finalTemp;

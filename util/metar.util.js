@@ -9,7 +9,6 @@
       
       //get wind information in required format
       function getWind(wind){
-        console.log('b4',{wind})
         wind = wind[wind.length - 1];
         console.log({wind})
         let degree = wind.substring(0,3);
